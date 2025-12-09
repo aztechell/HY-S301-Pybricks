@@ -68,6 +68,8 @@ https://github.com/devilhyt/lump-device-builder-library
 
 ## Первая версия (совместимая с MBC‑датчиком)
 
+Файлы лежат в папке mbc_compatible.
+
 Эмуляция датчика:
 
 **MBC Line Following Sensor**  
@@ -79,31 +81,12 @@ https://www.axione.shop/product-page/mbc-line-following-sensor
 
 ## Вторая версия (простая LINE8)
 
-Минимальная прошивка.  
+Прошивка Arduino в папке *code*.
+
 Передаёт ровно **8 байт (0–255)** — значения каналов слева направо.
 
-Пример чтения:
+Пример чтения в pybricks [sensor_read.py](sensor_read.py)
 
-```python
-from pybricks.iodevices import PUPDevice
-from pybricks.parameters import Port
-from pybricks.tools import wait
-
-line = PUPDevice(Port.A)
-
-def read_line():
-    while True:
-        try:
-            data = line.read(0)
-            if len(data) == 8:
-                return [(x & 0xFF) for x in data]
-        except OSError:
-            wait(50)
-
-while True:
-    print(read_line())
-    wait(100)
-```
 Также есть простой пример движения по линии. [LineFollower_simple.py](LineFollower_simple.py)
 
 ---
