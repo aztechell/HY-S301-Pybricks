@@ -30,17 +30,34 @@ Arduino Pro Micro эмулирует LPF2‑устройство и переда
 
 ## Проводка
 
-### 🎛 Arduino Pro Micro → HY‑S301
+### 🎛 Arduino Pro Micro → HW-529 → HY‑S301
 
 ```
-HY‑S301       Pro Micro
+HW-529       Pro Micro
 ------------------------
-S0        →   D7
+S0        →   D7 
 S1        →   D8
 S2        →   D9
 OUT       →   A1
 VCC       →   5V
 GND       →   GND
+```
+
+```
+HW-529        HY‑S301       
+------------------------
+VCC       →   VCC
+VCC       →   IR
+GND       →   GND
+Y0        →   D8
+Y1        →   D7
+Y2        →   D6
+Y3        →   D5
+Y4        →   D4
+Y5        →   D3
+Y6        →   D2
+Y7        →   D1
+
 ```
 
 ### 🔌 Arduino Pro Micro → SPIKE Prime (LPF2 UART)
@@ -53,6 +70,7 @@ RX           →    TX0 (D1)
 5V           →    VCC
 GND          →    GND
 ```
+[Spike Prime wiring](https://github.com/GianCann/SpikePrimeHub/blob/master/LEGO%20Spike%20Prime%20pin%20map.png).
 
 ---
 
