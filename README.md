@@ -18,10 +18,11 @@ Arduino Pro Micro эмулирует LPF2‑устройство и переда
 - Провод LPF2
 
 ## Изображения
-![img1](img/1.jpg)
-![img2](img/2.jpg)
-![img3](img/3.jpg)
-![img4](img/4.jpg)
+
+|   |   |
+|---------|-----------|
+| ![img1](img/1.jpg) | ![img2](img/3.jpg) |
+| ![img3](img/2.jpg) | ![img4](img/4.jpg) |
 
 ## Робот
 [line_follower_base.io](line_follower_base.io) — модель SPIKE-робота для демонстрациии движения по линии.
