@@ -66,10 +66,10 @@ Y7        →   D1
 ```
 SPIKE Prime       Pro Micro
 ----------------------------
-TX           →    RX1 (D0)
-RX           →    TX0 (D1)
-5V           →    VCC
-GND          →    GND
+RX (6)           →    TX0 (D1)
+TX (5)           →    RX1 (D0)
+3.3V (4)         →    VCC
+GND (3)          →    GND
 ```
 [Spike Prime wiring](https://github.com/GianCann/SpikePrimeHub/blob/master/LEGO%20Spike%20Prime%20pin%20map.png).
 
